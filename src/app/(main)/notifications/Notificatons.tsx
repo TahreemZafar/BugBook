@@ -63,7 +63,7 @@ export default function Notifications() {
 
       if ( status === "success" && !notifications.length && !hasNextPage ) {
           return (
-             <p className=" text-center text-muted-foreground mt-10 text-lg "> You don't have any notificatons yet. </p>
+             <p className=" text-center text-muted-foreground mt-10 text-lg "> You don&apos;t have any notificatons yet. </p>
           )
       }
 

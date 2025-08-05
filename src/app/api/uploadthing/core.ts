@@ -4,8 +4,6 @@ import streamServerClient from "@/lib/stream";
 import { createUploadthing, FileRouter } from "uploadthing/next";
 import { UploadThingError, UTApi } from "uploadthing/server";
 
-
-
 const f = createUploadthing();
 
 export const fileRouter = {

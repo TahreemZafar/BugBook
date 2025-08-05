@@ -24,7 +24,7 @@ export default function Page({ searchParams: {q} }: PageProps) {
                <div className=" w-full min-w-0 space-y-5 mt-3 ">
                    <div className=" border-2 border-violet-500 dark:border-gray-300 bg-card p-4 shadow-sm ">
                        <h1 className="text-center text-xl line-clamp-2 break-all font-bold ">
-                           Search Results for <span className=" text-violet-500 " > "{q}"</span>
+                           Search Results for <span className=" text-violet-500 " > &quot;{q}&quot;</span>
                        </h1>
                    </div>
    

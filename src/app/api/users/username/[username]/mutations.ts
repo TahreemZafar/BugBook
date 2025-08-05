@@ -47,12 +47,12 @@ export function useUpdateProfileMutation () {
                         pages: oldData.pages.map(page => ({
                             cursor: page.cursor,
                             posts: page.posts.map(post => {
-                                if ( post.user.id === updatedUser.updateUser.id ) {
+                                if ( post.user.id === updatedUser.id ) {
                                     return {
                                         ...post,
                                         user: {
-                                            ...updatedUser.updateUser,
-                                            avatarUrl: newAvaterUrl || updatedUser.updateUser.avatarUrl
+                                            ...updatedUser,
+                                            avatarUrl: newAvaterUrl || updatedUser.avatarUrl
                                             
                                         }
                                     }

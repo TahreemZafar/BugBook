@@ -41,7 +41,7 @@ export default function Bookmarks() {
 
       if ( status === "success" && !posts.length && !hasNextPage ) {
           return (
-             <p className=" text-center text-muted-foreground mt-10 text-lg "> You don't have any bookmarks yet. </p>
+             <p className=" text-center text-muted-foreground mt-10 text-lg "> You don&apos;t have any bookmarks yet. </p>
           )
       }
 

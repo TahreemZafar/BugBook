@@ -49,7 +49,7 @@ export default function UserPosts({ userId, loggedInUser }: UserPostsProps) {
 
       if ( status === "success" && !posts.length && !hasNextPage && userId !== loggedInUser ) {
           return (
-             <p className=" text-center text-muted-foreground mt-10 text-lg "> This user has'nt posted anything yet. </p>
+             <p className=" text-center text-muted-foreground mt-10 text-lg "> This user hasn&apos;t posted anything yet. </p>
           )
       }
 

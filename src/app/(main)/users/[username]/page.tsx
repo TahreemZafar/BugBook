@@ -61,7 +61,7 @@ export default async function Page ({ params: { username } }: PageProps) {
         if ( !loggedInUser ) {
             return (
                 <p className=" text-destructive mt-10 text-center ">
-                    You're not authorized to view this page.
+                    You&apos;re not authorized to view this page.
                 </p>
             )
         }

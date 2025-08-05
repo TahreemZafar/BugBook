@@ -1,8 +1,9 @@
 import prisma from "@/lib/prisma";
+import { NextRequest } from "next/server";
 import { UTApi } from "uploadthing/server";
 
 
-export async function GET( req: Request ) {
+export async function GET( req: NextRequest ) {
     try {
 
         const authHeaders = req.headers.get("Authorization");
