@@ -116,7 +116,7 @@ export const fileRouter = {
     }),
 
   attachment: f({
-    image: { maxFileSize: "512KB", maxFileCount: 5 },
+    image: { maxFileSize: "128MB", maxFileCount: 5 },
     video: { maxFileSize: "64KB", maxFileCount: 5 },
   })
     .middleware(async () => {
