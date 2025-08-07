@@ -104,7 +104,7 @@ const getTrendingTopics = unstable_cache(
            SELECT LOWER(unnest(regexp_matches(content, '#[[:alnum:]]+', 'g'))) AS hashtag, COUNT(*) AS count FROM posts
             GROUP BY (hashtag)
            ORDER BY count DESC, hashtag ASC
-            LIMIT 5
+            LIMIT 4
         `;
 
         return result.map((row) => ({
